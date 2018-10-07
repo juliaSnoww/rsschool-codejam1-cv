@@ -1,0 +1,92 @@
+
+div {
+  box-sizing: border-box;
+}
+.content-head {
+  font-family : Georgia !important;
+  color: #111;
+  font-size :100px;
+  position:absolute;
+  left: 47%;
+  top: 20%;
+}
+
+.background {
+  height: 350px;
+  width: 100%;
+  background-image: url("../image/header2.jpg");
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body, html {
+  width: 100%;
+}
+
+header {
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1024px;
+  height: 350px;
+}
+
+footer {
+  background-color: #27296d;
+  width: 100%;
+  position: relative;
+  color: #F2F2F2;
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+
+
+footer h1 {
+  padding: 0.3em 0.7em;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+.social {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 70px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(20px) rotate(360deg);
+}
+
+
