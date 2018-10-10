@@ -1,0 +1,326 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic,600italic,700,700italic,800);
+
+div {
+    box-sizing: border-box;
+}
+.content-head {
+    font-family : Georgia !important;
+    color: #111;
+    font-size :100px;
+    position:absolute;
+    left: 47%;
+    top: 20%;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.background {
+    height: 350px;
+    width: 100%;
+    background-image: url("../image/header2.jpg");
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#all{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body, html {
+    width: 100%;
+}
+
+header {
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1024px;
+    height: 350px;
+}
+
+#contenido {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    color: #242424;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+#about {
+    padding: 1em;
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+#about:after {
+    display: block;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-top: 33px solid #F2F2F2;
+    border-right: 50vw solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 50vw solid transparent;
+}
+
+.seccion {
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+    margin-bottom: 0.4em;
+    color: #a393eb;
+}
+
+#about p {
+    margin: 0 10vw;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+
+#cita {
+    padding: 60px 0;
+    background-color: #a393eb;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #F2F2F2;
+}
+#cita p {
+    font-size: 1.3em;
+    padding-left: 10px;
+    border-left: 2px solid #F2F2F2;
+    font-weight: 300;
+}
+
+#contenedorTimeline {
+    background-color: #F2F2F2;
+    width: 100%;
+    position: relative;
+}
+
+#contenedorTimeline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 33px solid #F2F2F2;
+    border-right: 512px solid transparent;
+    border-top: 0 solid transparent;
+    border-left: 512px solid transparent;
+}
+
+.timelineItem:after, .timelineItem:before {
+    content: '';
+    display: block;
+    width: 1024px;
+    clear: both;
+}
+
+#timeline {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    padding: 0 10px;
+}
+
+#timeline:before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #a393eb;
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+
+#timeline:after {
+    content: '';
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+.timelineItem {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timelineIcon {
+    background: #a393eb;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -23px;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.timelineIcon i {
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.timelineContent {
+    width: 45%;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.timelineContent h2 {
+    padding: 15px;
+    background: #a393eb;
+    color: #FFF;
+    margin: -20px -20px 0 -20px;
+    border-radius: 3px 3px 0 0;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.timelineContent div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.timelineContent img {
+    width: 50%;
+    height: auto !important;
+    object-fit: contain;
+}
+.timelineContent img:hover {
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(2);
+}
+
+.timelineContent p {
+    line-height: 1.45em;
+    margin-left: 10px;
+}
+
+.timelineContent:before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #a393eb;
+}
+
+.timelineContent.right {
+    float: right;
+}
+
+.timelineContent.right:before {
+    content: '';
+    right: 45%;
+    left: inherit;
+    border-left: 0;
+    border-right: 7px solid #a393eb;
+}
+
+footer {
+    background-color: #27296d;
+    width: 100%;
+    position: relative;
+    color: #F2F2F2;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+footer:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 33px solid #27296d;
+    border-right: 512px solid transparent;
+    border-top: 0 solid transparent;
+    border-left: 512px solid transparent;
+}
+
+footer h1 {
+    padding: 0.3em 0.7em;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+.social {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    background-clip: content-box;
+    padding: 10px;
+    transition: .5s;
+    color: #D7D0BE;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 70px;
+}
+
+.social .link span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+    padding: 20px;
+    color: white;
+    margin-left: -5px;
+    transform: translateX(20px) rotate(360deg);
+}
+
+
